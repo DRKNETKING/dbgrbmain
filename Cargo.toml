@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "crates/channels-console",
+    "crates/channels-console-tokio-test",
+    "crates/channels-console-futures-test",
+    "crates/channels-console-std-test",
+    "crates/channels-console-crossbeam-test",
+    "crates/channels-console-streams-test",
+]
+resolver = "2"
+
+[workspace.dependencies]
+channels-console = { path = "./crates/channels-console", version = "0.3.3" }

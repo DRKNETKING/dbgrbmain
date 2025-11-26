@@ -1,29 +1,3 @@
-.DS_Store
-**/*.log
-*.iml
-target/
+/target
+Cargo.lock
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.local
-
-.gradle/
-tmp/
-.flattened-pom.xml
-dependency-reduced-pom.xml
-
-logs/
-
-.cursor
-.cursorrules
-**/src/test
-
-.claude
-CLAUDE.md
-
-.dat
