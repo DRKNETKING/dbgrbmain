@@ -1,3 +1,8 @@
-/target
-Cargo.lock
+Gemfile.lock
+.bundle/
+.ruby-version
+pkg/
+*.gem
+docker-compose.yml
+.byebug_history
 
