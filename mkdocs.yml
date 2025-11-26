@@ -1,0 +1,131 @@
+# Project information .........................................
+site_name: "AI Agents Hackathon 2025"
+site_url: https://microsoft.github.io/AI_Agents_Hackathon
+
+# Copyright ...................................................
+copyright: >
+  &copy; 2025 Microsoft &nbsp;|&nbsp;
+  <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy </a>&nbsp;|&nbsp;
+  <a href="https://go.microsoft.com/fwlink/?LinkId=2259814">Consumer Health Privacy </a>&nbsp;|&nbsp;
+  <a onclick="window.manageConsent();">Cookies </a>&nbsp;|&nbsp;
+  <a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of Use </a>&nbsp;|&nbsp;
+  <a href="https://www.microsoft.com/trademarks">Trademarks </a>
+
+# Configuration ...............................................
+theme:
+  name: material 
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+  font:
+    code: Roboto Mono  #Monospaced
+    text: Roboto       #Regular
+  logo: media/logo.svg
+  language: en
+
+  # Theme Modes ...............................................
+  palette:
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  # Theme Features ...............................................
+  features:
+    # - navigation.instant
+    # - navigation.expand             # sidebar collapsible sections open
+    # - navigation.instant.progress   # load progress indicator
+    # - navigation.tracking           # tracks anchor tags in URL
+    - navigation.tabs               # tabbed on desktop, single in mobile    
+    - navigation.tabs.sticky        # tabs stick when scrolling downtheme:
+    # - navigation.path               # add breadcrumbs
+    # - navigation.indexes            # default index.md in folder is section page
+    # - navigation.top
+    # - toc.follow
+    - navigation.footer
+    # - content.code.copy             # allow copy-paste from codeblocks
+    # - content.tabs.link             # Ensures site-wide switch to same tab name
+
+# Extras  ...............................................
+extra:
+  generator: false
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage 
+  analytics:
+    provider: google
+    property: G-E2ZVWW6ZSL
+
+plugins:
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Overview: Inicio
+            Rules: Reglas
+            Submission: Enviar
+            Discussions: Discusiones
+        - locale: pt
+          name: Português
+          build: true
+          nav_translations:
+            Overview: Início
+            Rules: Regras
+            Submission: Enviar
+            Discussions: Discussões
+        - locale: zh
+          name: 中文
+          build: true
+          nav_translations:
+            Overview: 概览
+            Rules: 规则
+            Submission: 提交
+            Discussions: 讨论
+
+# Navigation  ...............................................
+nav:
+  - Overview: index.md
+  - Rules: rules.md
+  - Submission: submission.md
+  - Discussions: https://github.com/microsoft/AI_Agents_Hackathon/discussions
+
+# Extensions  ...............................................
+markdown_extensions:
+  - admonition      
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      toc_depth: 3
+
+extra_css:
+  - stylesheets/extra.css
